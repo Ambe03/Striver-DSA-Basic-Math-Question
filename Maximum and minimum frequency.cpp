@@ -39,8 +39,6 @@ void count(int arr[], int n)
 int main()
 {
 	int arr[10] = {3,3,3,3,4,4,2,2,2,6};
-	int n = 10;
-
-	
+	int n = 10;cd
 	count(arr, n);
 }

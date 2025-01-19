@@ -18,7 +18,6 @@ void charhash(string s)
 
 		}
 	}
-	
 }
 int main()
 {
