@@ -12,10 +12,10 @@ void maphash(int arr[],int n)
 	}
 	
 	//iterate
-    for(auto it : mpp)
-    {
-    	cout<<it.first <<" "<<it.second<<endl;
-	}
+//	    for(vector<int>::iterator it : mpp)
+//	    {
+//	    	cout<<it.first <<" "<<it.second<<endl;
+//		}
 	
 	int q;
 	cin>>q;
@@ -32,15 +32,38 @@ void maphash(int arr[],int n)
         }
 	}
 }
+
+void selection(int arr[], int n)
+{
+	for(int i=0; i<n-1; i++)
+	{
+		int mini = i;
+		for (int j=i+1; j<n; j++)
+		{
+			if( arr[j]<arr[i])
+			{
+				mini = j;
+			}
+		}
+		int temp = arr[mini];
+		arr[mini] = arr[i];
+		arr[i] = temp;
+	}
+}
+
 int main()
 {
-	int n = 5; 
-
-	int arr[5];
+	int arr[5] ={5,4,3,2,1};
+	int n=5;
 	for(int i=0; i<n; i++)
 	{
-		cin>>arr[i];
+		cout<<arr[i]<<endl;
 	}
 	
-	maphash(arr,n);
+	selection(arr,n);
+	
+		for(int i=0; i<n; i++)
+	{
+		cout<<arr[i];
+	}
 }
