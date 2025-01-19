@@ -31,6 +31,8 @@ bool armstrong(int n)
 				return false;
 			}
 		*/
+		
+		
 	//APPROACH IInd
 	while(num!=0)
 	{
