@@ -114,11 +114,8 @@ int main()
 	print(arr, n);
 	int low = 0;
 	int high = n-1;
-	
 	cout<<"after sorting"<<endl;
 	mergeSort(arr, low, high);
-	print(arr, n);
-	
-	
+	print(arr, n);	
 }
 
